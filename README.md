@@ -99,6 +99,11 @@ Are you sure this is the correct battery device on your system?
 3. **Calculate Health**: Estimates health as a percentage of the current full charge vs. design capacity.
 4. **Color-Coding**: Adds color-coded output to highlight key metrics.
 
+
+### Cycle Count
+The cycle count refers to the number of charge and discharge cycles that the battery has gone through. A charge cycle is typically defined as using 100% of the battery's capacity, whether done in one full discharge or incrementally (e.g., using 50% twice counts as one cycle).
+The cycle count is retrieved from the battery's sysfs files, specifically from /sys/class/power_supply/BAT1/cycle_count (or the equivalent path for your battery). This value provides an estimate of the battery's usage and wear over time, as the number of cycles is a key metric for determining a battery's lifespan.
+Modern batteries are designed to last for a certain number of cycles (e.g., 300–1000 cycles) before their capacity significantly degrades. If the cycle count value is not supported on your system, the script will display it as "Unknown."
 ---
 
 ## Troubleshooting
