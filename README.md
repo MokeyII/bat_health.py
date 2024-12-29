@@ -1,6 +1,3 @@
-# bat_health.py
-simple .py script to show your battery health for linux
-
 # Battery Health Monitor
 
 This Python script retrieves and displays battery health information for Linux systems using the sysfs interface. It provides insights into battery status, capacity, cycle count, and estimated health percentage.
@@ -55,6 +52,20 @@ python3 bat_health.py
 ```
 
 If the battery information is in a path other than `/sys/class/power_supply/BAT1`, update the `BATTERY_PATH` variable in the script accordingly.
+
+---
+
+## Usage
+
+1. Just run the script directly:
+   ```bash
+   ./battery_health.py
+   ```
+
+2. Or make it a system alias if you like:
+   ```bash
+   alias bathealth="~/battery_health.py"
+   ```
 
 ---
 
