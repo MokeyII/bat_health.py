@@ -94,7 +94,7 @@ Are you sure this is the correct battery device on your system?
 
 ## How It Works
 
-1. **Battery Path**: Reads battery data from `/sys/class/power_supply/BAT1` by default. Update the `BATTERY_PATH` variable in the script if needed.
+1. **Battery Path**: Reads battery data from `/sys/class/power_supply/BAT1` by default. Update the `BATTERY_PATH` variable in the script if needed. You can find this by running `ls /sys/class/power_supply/`
 2. **Retrieve Data**: Gathers information on status, capacity, energy levels, cycle count, and battery technology.
 3. **Calculate Health**: Estimates health as a percentage of the current full charge vs. design capacity.
 4. **Color-Coding**: Adds color-coded output to highlight key metrics.
